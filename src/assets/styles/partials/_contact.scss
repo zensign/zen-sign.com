@@ -1,0 +1,33 @@
+.contact {
+	.container {
+		p {
+			strong, span, em, a {
+				display:block;
+				text-transform:uppercase;
+			}
+
+			span {
+				font-weight:300;
+				color:$faded-white;
+			}
+
+			em {
+				font-weight:600;
+				font-size:1.5em;
+				letter-spacing:0.05em;
+				padding:5px 0 10px 0;
+			}
+
+			a {
+				width:80px;
+				height:80px;
+			}
+
+			@media screen and (max-width: 400px) {
+				em {
+					font-size:1.3em;
+				}
+			}
+		}
+	}
+}

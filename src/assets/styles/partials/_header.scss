@@ -1,0 +1,52 @@
+@import '../modules/vars';
+
+header {
+	&.header {
+		position:relative;
+		width:100%;
+		max-width:$wide;
+		line-height:40px;
+		margin:0 auto -50px;
+		padding: 5px 0;
+
+		h1 {
+
+			color: white;
+			text-transform: uppercase;
+			font-weight:500;
+
+			span {
+				font-weight:300;
+			}
+		}
+
+		nav {
+			position:absolute;
+			top:0;
+			right:0;
+
+			@media screen and (max-width: 600px) {
+				display:none;
+			}
+
+			ul {
+				li {
+					display:inline-block;
+
+					a {
+						display:block;
+						color:white;
+						text-decoration:none;
+						font-weight:300;
+						padding:5px;
+
+						&:hover {
+							padding-top:0;
+							border-top: solid 5px rgba(255,255,255, .2);
+						}
+					}
+				}
+			}
+		}
+	}
+}
