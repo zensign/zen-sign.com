@@ -1,7 +1,12 @@
 @import './vars';
 
+* {
+	scroll-behavior: smooth;
+}
+
 #app {
   font-family: "Lato", sans-serif;
+  background: $light-grey;
 }
 
 .container {
